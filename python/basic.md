@@ -3,7 +3,6 @@
 ## 목차
 
 - [1. 기본 개념](#1-기본-개념)
-
   - [Object(객체)와 Data Type(자료형)](#object객체와-data-type자료형)
   - [Comment(주석)](#comment주석)
   - [Object(객체)의 상호 작용 및 이름](#object객체의-상호-작용-및-이름)
@@ -12,20 +11,14 @@
   - [Object(객체) 사용](#object객체-사용)
   - [User Defined Data Type(사용자 정의 자료형)](#user-defined-data-type사용자-정의-자료형)
   - [Module](#module)
-
-  [2. 숫자와 자료형](#2-숫자와-자료형)
-
+- [2. 숫자와 자료형](#2-숫자와-자료형)
   - [Python에서의 숫자](#python에서의-숫자)
-
-  [3. 변수](#3-변수)
-
+- [3. 변수](#3-변수)
   - [변수 네이밍](#변수-네이밍)
   - [Assignment Operators(대입 연산자)](#assignment-operators대입-연산자)
   - [Dynamic Typing(동적 자료형 결정)](#dynamic-typing동적-자료형-결정)
   - [Mutability(가변성)과 Immutability(불변성)](#mutability가변성과-immutability불변성)
-
-  [4. Strings(문자열)](#4-strings문자열)
-
+- [4. Strings(문자열)](#4-strings문자열)
   - [string literal](#string-literal)
   - [string 출력](#string-출력)
   - [indexing(인덱싱)과 slicing(슬라이싱)](#indexing인덱싱과-slicing슬라이싱)
@@ -101,10 +94,10 @@ x = 5 # 변수 x에 5를 할당
 
 ```python
 def hello():
-  """
-  이 함수는 인사말을 출력
-  """
-  print("Hello")
+    """
+    이 함수는 인사말을 출력
+    """
+    print("Hello")
   
 print(hello.__doc__) # 이 함수는 인사말을 출력
 ```
@@ -162,8 +155,8 @@ print(name)
 
 # 함수를 직접 만들기
 def your_name():
-	name = input("당신의 이름은? ")
-	print(name)
+    name = input("당신의 이름은? ")
+    print(name)
 
 # 함수 호출
 your_name()
@@ -180,12 +173,12 @@ your_name()
 a = 5
 
 if a > 3:
-	print("3 초과") # 이 문구를 출력
+    print("3 초과") # 이 문구를 출력
 else:
-	print("3 이하")
+    print("3 이하")
   
 for b in range(4):
-	print(b)
+    print(b)
 # 0
 # 1
 # 2
@@ -212,11 +205,11 @@ print(b) # 2
 
 ```python
 class MyInt:
-	def __init__(self, value):
-  	self.value = value  # instance variable
+    def __init__(self, value):
+        self.value = value  # instance variable
 
-	def print(self):  # method
-		print("내가 만든 정수형", self.value)
+    def print(self):  # method
+        print("내가 만든 정수형", self.value)
 
 a = MyInt(135)
 a.print()
