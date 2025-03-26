@@ -2,26 +2,33 @@
 
 ## 목차
 
-- [1. 기본 개념](#1. 기본 개념)
-  - [Object(객체)와 Data Type(자료형)](#Object(객체)와 Data Type(자료형))
-  - [Comment(주석)](#comment(주석))
-  - [Object(객체)의 상호 작용 및 이름](#Object(객체)의 상호 작용 및 이름)
-  - [Function(함수) 사용법](#Function(함수) 사용법)
-  - [Flow Control(흐름 제어)](#Flow Control(흐름 제어))
-  - [Object(객체) 사용](#Object(객체) 사용)
-  - [User Defined Data Type(사용자 정의 자료형)](#User Defined Data Type(사용자 정의 자료형))
+- [1. 기본 개념](#1-기본-개념)
+
+  - [Object(객체)와 Data Type(자료형)](#object객체와-data-type자료형)
+  - [Comment(주석)](#comment주석)
+  - [Object(객체)의 상호 작용 및 이름](#object객체의-상호-작용-및-이름)
+  - [Function(함수) 사용법](#function함수-사용법)
+  - [Flow Control(흐름 제어)](#flow-control흐름-제어)
+  - [Object(객체) 사용](#object객체-사용)
+  - [User Defined Data Type(사용자 정의 자료형)](#user-defined-data-type사용자-정의-자료형)
   - [Module](#module)
-- [2. 숫자와 자료형](#2. 숫자와 자료형)
-  - [Python에서의 숫자](#Python에서의 숫자)
-- [3. 변수](#3. 변수)
-  - [변수 네이밍](#변수 네이밍)
-  - [Assignment Operators(대입 연산자)](#Assignment Operators(대입 연산자))
-  - [Dynamic Typing(동적 자료형 결정)](#Dynamic Typing(동적 자료형 결정))
-  - [Mutability(가변성)과 Immutability(불변성)](#Mutability(가변성)과 Immutability(불변성))
-- [4. Strings(문자열)](#4. Strings(문자열))
-  - [string literal](#string literal)
-  - [string 출력](#string 출력)
-  - [indexing(인덱싱)과 slicing(슬라이싱)](#indexing(인덱싱)과 slicing(슬라이싱))
+
+  [2. 숫자와 자료형](#2-숫자와-자료형)
+
+  - [Python에서의 숫자](#python에서의-숫자)
+
+  [3. 변수](#3-변수)
+
+  - [변수 네이밍](#변수-네이밍)
+  - [Assignment Operators(대입 연산자)](#assignment-operators대입-연산자)
+  - [Dynamic Typing(동적 자료형 결정)](#dynamic-typing동적-자료형-결정)
+  - [Mutability(가변성)과 Immutability(불변성)](#mutability가변성과-immutability불변성)
+
+  [4. Strings(문자열)](#4-strings문자열)
+
+  - [string literal](#string-literal)
+  - [string 출력](#string-출력)
+  - [indexing(인덱싱)과 slicing(슬라이싱)](#indexing인덱싱과-slicing슬라이싱)
 
 ## 1. 기본 개념
 
