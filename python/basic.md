@@ -162,8 +162,8 @@ print(name)
 
 # 함수를 직접 만들기
 def your_name():
-		name = input("당신의 이름은? ")
-		print(name)
+	name = input("당신의 이름은? ")
+	print(name)
 
 # 함수 호출
 your_name()
@@ -180,12 +180,12 @@ your_name()
 a = 5
 
 if a > 3:
-		print("3 초과") # 이 문구를 출력
+	print("3 초과") # 이 문구를 출력
 else:
-		print("3 이하")
+	print("3 이하")
   
 for b in range(4):
-		print(b)
+	print(b)
 # 0
 # 1
 # 2
@@ -212,11 +212,11 @@ print(b) # 2
 
 ```python
 class MyInt:
-    def __init__(self, value):
-        self.value = value  # instance variable
+	def __init__(self, value):
+  	self.value = value  # instance variable
 
-    def print(self):  # method
-        print("내가 만든 정수형", self.value)
+	def print(self):  # method
+		print("내가 만든 정수형", self.value)
 
 a = MyInt(135)
 a.print()
