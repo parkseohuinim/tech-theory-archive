@@ -23,6 +23,7 @@
   - [string 출력](#string-출력)
   - [indexing(인덱싱)과 slicing(슬라이싱)](#indexing인덱싱과-slicing슬라이싱)
   - [string의 immutable(불변)](#string의-immutable(불변))
+  - [string의 method](#string의-method)
 
 ## 1. 기본 개념
 
