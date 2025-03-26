@@ -22,6 +22,7 @@
   - [string literal](#string-literal)
   - [string 출력](#string-출력)
   - [indexing(인덱싱)과 slicing(슬라이싱)](#indexing인덱싱과-slicing슬라이싱)
+  - [string의 immutable(불변)](#string의-immutable(불변))
 
 ## 1. 기본 개념
 
@@ -400,7 +401,7 @@ print(type(a)) # <class 'str'>
 
 |      | Immutable                              | Mutable               |
 | ---- | -------------------------------------- | --------------------- |
-| Type | `int`, `float`, `bool`, `str`, `tuple` | `List`, `dict`, `set` |
+| Type | `int`, `float`, `bool`, `str`, `tuple` | `list`, `dict`, `set` |
 
 ```python
 # 같은 객체에 이름표 두개를 발급할 수 있음
@@ -541,4 +542,71 @@ message[::2] # 후하만
 # step에 음수를 사용하면 역순
 message = "후덜하고만"
 message[::-2] # 만하후
+```
+
+### string의 immutable(불변)
+
+- python의 `string`은 immutable(불변) 자료형으로, 일부를 수정할 수 없고, 수정된 object를 새로 생성해야 함
+
+```python
+# slicing을 해도 원래 object는 변하지 않음
+message = "저는박서희입니다"
+message[1:4] # 는박서
+message # 저는박서희입니다
+
+# slicing으로 새로운 object 생성
+change = message[1:4]
+print(id(message)) # 4383831408
+print(id(change)) # 4383818976
+
+# immutable object의 일부를 바꿀 수 없음
+message = "ABCD"
+message[2] = "Z" # TypeError: 'str' object does not support item assignment
+
+# 특정 위치의 한 글자만 바꿀 경우
+message = "ABCDEFG"
+message = message[:1] + "Z" + message[2:]
+message # AZCDEFG
+
+# 축약형 대입 연산자를 사용할 수 있음
+message = "박서희"
+print(id(message), message) # 4379126352 박서희
+
+message += " 입니다"
+print(id(message), message) # 4384272816 박서희 입니다
+```
+
+### string의 method
+
+```python
+# 대문자로 변경
+message = "Good Bye, Alvin Park"
+message.upper() # GOOD BYE, ALVIN PARK
+
+# 소문자로 변경
+message = "Good Bye, Alvin Park"
+message.lower() # good bye, alvin park
+
+# 한글에는 적용되지 않음
+message = "박서희입니다"
+message.upper() # 박서희입니다
+message.lower() # 박서희입니다
+
+# 공백 기준으로 string 나누기
+message = "Hello, Alvin! Have a nice day!"
+message.split() # ['Hello,', 'Alvin!', 'Have', 'a', 'nice', 'day!']
+
+# 콤마를 기준으로 string 나누기
+message = "Hello, Alvin! Have a nice day!"
+message.split(',') # ['Hello', ' Alvin! Have a nice day!']
+
+# 멤버쉽 연산자 in
+message = "Alvin"
+'A' in message # True
+'B' in message # False
+
+# 반복문과 함께 사용
+message = "Alvin"
+for i in message:
+    print(i)
 ```
