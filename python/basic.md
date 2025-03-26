@@ -4,7 +4,7 @@
 
 - [1. 기본 개념](#1. 기본 개념)
   - [Object(객체)와 Data Type(자료형)](#Object(객체)와 Data Type(자료형))
-  - [Comment(주석)](#Comment(주석))
+  - [Comment(주석)](#comment(주석))
   - [Object(객체)의 상호 작용 및 이름](#Object(객체)의 상호 작용 및 이름)
   - [Function(함수) 사용법](#Function(함수) 사용법)
   - [Flow Control(흐름 제어)](#Flow Control(흐름 제어))
