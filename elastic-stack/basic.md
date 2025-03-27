@@ -2,34 +2,34 @@
 
 ## 목차
 
-- [1. 기본](#1.-기본)
+- [1. 기본](#1-기본)
   - [분산형 검색 및 분석 엔진](#분산형-검색-및-분석-엔진)
   - [핵심 용어](#핵심-용어)
 
-- [2. Document 구조와 데이터 모델](#2.-Document-구조와-데이터-모델)
+- [2. Document 구조와 데이터 모델](#2-Document-구조와-데이터-모델)
   - [Document](#Document)
   - [Mapping](#Mapping)
 
-- [3. 검색과 쿼리의 개념](#3.-검색과-쿼리의-개념)
+- [3. 검색과 쿼리의 개념](#3-검색과-쿼리의-개념)
   - [Inverted Index(역색인) 구조](#Inverted-Index(역색인)-구조)
   - [Full-text Search(전문 검색)](#Full-text-Search(전문-검색))
   - [Query DSL](#Query-DSL)
   - [분석과 토큰화](#분석과-토큰화)
 
-- [4. Elasticsearch 데이터 저장 및 검색 프로세스](#4.-Elasticsearch-데이터-저장-및-검색-프로세스)
+- [4. Elasticsearch 데이터 저장 및 검색 프로세스](#4-Elasticsearch-데이터-저장-및-검색-프로세스)
   - [데이터 저장 과정](#데이터-저장-과정)
   - [데이터 검색 과정](#데이터-검색-과정)
 
-- [5. Elastic Stack 구성 요소](#5.-Elastic-Stack-구성-요소)
+- [5. Elastic Stack 구성 요소](#5-Elastic-Stack-구성-요소)
   - [Kibana](#Kibana)
   - [Logstash](#Logstash)
   - [Beats](#Beats)
 
-- [6. 분산 시스템 이론](#6.-분산-시스템-이론)
+- [6. 분산 시스템 이론](#6-분산-시스템-이론)
   - [분산 아키텍처](#분산-아키텍처)
   - [CAP 이론](#CAP-이론)
 
-- [7. 성능 최적화](#7.-성능-최적화)
+- [7. 성능 최적화](#7-성능-최적화)
   - [Index 설계](#Index-설계)
   - [Query 최적화](#Query-최적화)
 
