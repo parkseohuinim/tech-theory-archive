@@ -171,6 +171,8 @@ sudo dnf install -y conntrack-tools iptables iproute-tc socat
 
 필수 조건: 설정 전 [1. kubernetes 설치 가이드(Amazon Linux 2023용)](#1-kubernetes-설치-가이드(Amazon-Linux 2023용)) 필수
 
+---
+
 ### 1. 초기화
 
 - 쿠버네티스 클러스터 초기화 (API 서버를 퍼블릭 IP로 노출)
