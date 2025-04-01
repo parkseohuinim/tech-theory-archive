@@ -2,21 +2,21 @@
 
 ## 목차
 
-- [1. 설치(Helm)](#1-설치(Helm))
-  - [1. 사전 준비(워커 노드)](#1-사전-준비(워커-노드))
-  - [2. 로컬 스토리지 클래스 생성(마스터 노드)](#2-로컬-스토리지-클래스-생성(마스터-노드))
-  - [3. PersistentVolume 생성(마스터 노드)](#3-PersistentVolume-생성(마스터-노드))
-  - [4. Helm으로 PostgreSQL 설치(마스터 노드)](#4-Helm으로-PostgreSQL-설치(마스터-노드))
-  - [5. 설치 확인(마스터 노드)](#5-설치-확인(마스터-노드))
+- [1. 설치 Helm](#1-설치-Helm)
+  - [1. 워커 노드 사전 준비](#1-워커-노드-사전 준비)
+  - [2. 마스터 노드 로컬 스토리지 클래스 생성](#2-마스터-노드-로컬-스토리지-클래스-생성)
+  - [3. 마스터 노드 PersistentVolume 생성](#3-마스터-노드-PersistentVolume-생성)
+  - [4. 마스터 노드 Helm으로 PostgreSQL 설치](#4-마스터-노드-Helm으로-PostgreSQL-설치)
+  - [5. 마스터 노드 설치 확인](#5-마스터-노드-설치-확인)
   - [6. 비밀번호 확인 및 PostgreSQL 접속](#6-비밀번호-확인-및-PostgreSQL-접속)
 
-## 1. 설치(Helm)
+## 1. 설치 Helm
 
 본 작업은 **마스터 노드**에서 **워커 노드**에 설치하는 작업
 
 ---
 
-### 1. 사전 준비(워커 노드)
+### 1. 워커 노드 사전 준비
 
 ```bash
 # 데이터 디렉토리 생성
@@ -25,7 +25,7 @@ sudo mkdir -p /mnt/postgres-data
 sudo chmod 777 /mnt/postgres-data
 ```
 
-### 2. 로컬 스토리지 클래스 생성(마스터 노드)
+### 2. 마스터 노드 로컬 스토리지 클래스 생성
 
 ```bash
 cat <<EOF | kubectl apply -f -
@@ -40,7 +40,7 @@ volumeBindingMode: WaitForFirstConsumer
 EOF
 ```
 
-### 3. PersistentVolume 생성(마스터 노드)
+### 3. 마스터 노드 PersistentVolume 생성
 
 ```bash
 cat <<EOF | kubectl apply -f -
@@ -66,7 +66,7 @@ spec:
 EOF
 ```
 
-### 4. Helm으로 PostgreSQL 설치(마스터 노드)
+### 4. 마스터 노드 Helm으로 PostgreSQL 설치
 
 ```bash
 helm install postgresql bitnami/postgresql \
@@ -80,7 +80,7 @@ helm install postgresql bitnami/postgresql \
   --set persistence.storageClass=local-storage
 ```
 
-### 5. 설치 확인(마스터 노드)
+### 5. 마스터 노드 설치 확인
 
 ```bash
 kubectl get pods -l app.kubernetes.io/name=postgresql -o wide

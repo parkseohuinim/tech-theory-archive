@@ -11,8 +11,8 @@
   - [Mapping](#Mapping)
 
 - [3. 검색과 쿼리의 개념](#3-검색과-쿼리의-개념)
-  - [Inverted Index(역색인) 구조](#Inverted-Index(역색인)-구조)
-  - [Full-text Search(전문 검색)](#Full-text-Search(전문-검색))
+  - [Inverted Index 구조](#Inverted-Index-구조)
+  - [Full-text Search](#Full-text-Search)
   - [Query DSL](#Query-DSL)
   - [분석과 토큰화](#분석과-토큰화)
 
@@ -84,14 +84,14 @@
 
 ## 3. 검색과 쿼리의 개념
 
-### Inverted Index(역색인) 구조
+### Inverted Index 구조
 
 - 데이터를 저장할 때 미리 색인을 생성하여 빠르게 검색 가능
 - 검색어를 키워드 단위로 분리하여 인덱싱(토큰화)
 
 ---
 
-### Full-text Search(전문 검색)
+### Full-text Search
 
 - 검색어를 자연어로 입력해도 유사도를 고려하여 검색 가능
 - elastic은 TF-IDF 및 BM25 알고리즘을 활용하여 검색 결과를 랭킹
