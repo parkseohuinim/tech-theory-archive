@@ -2,8 +2,8 @@
 
 ## 목차
 
-- [1. CDC(Change Data Capture)의 기본 개념](#1-CDC(Change Data Capture)의-기본-개념)
-- [2. RAG(Retrieval-Augmented Generation)와 통합](#2-RAG(Retrieval-Augmented Generation)와-통합)
+- [1. CDC(Change Data Capture)의 기본 개념](#1-CDC(Change-Data-Capture)의-기본-개념)
+- [2. RAG(Retrieval-Augmented Generation)와 통합](#2-RAG(Retrieval-Augmented-Generation)와-통합)
 - [3. 시스템 복원력 향상 메커니즘](#3-시스템-복원력-향상-메커니즘)
   - [1. 시스템 신뢰성](#1-시스템-신뢰성)
   - [2. 일관성과 확장성](#2-일관성과-확장성)
@@ -114,9 +114,9 @@
 
 ## 7. 정리
 
-![cdc-rag-system-1](/Users/seohuipark/Desktop/Document/tech-theory-archive/ai/cdc-rag-system-1.png)
+![아키텍처](https://github.com/parkseohuinim/tech-theory-archive/blob/main/ai/cdc-rag-system-1.png)
 
-![cdc-rag-system-2](/Users/seohuipark/Desktop/Document/tech-theory-archive/ai/cdc-rag-system-2.png)
+![핵심](https://github.com/parkseohuinim/tech-theory-archive/blob/main/ai/cdc-rag-system-2.png)
 
 ---
 
