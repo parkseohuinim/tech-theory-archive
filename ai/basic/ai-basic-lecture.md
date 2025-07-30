@@ -31,7 +31,7 @@
     - [4.3 멀티 에이전트 시스템 아키텍처](#43-멀티-에이전트-시스템-아키텍처)
 - [MCP의 모든 것](#MCP의-모든-것)
   - [5. MCP 활용](#5-MCP-활용)
-    - [5.1 MCP(Model Context Protocol) 개요](#51-MCP(Model-Context-Protocol)-개요)
+    - [5.1 MCP(Model Context Protocol) 개요](#51-MCPModel-Context-Protocol-개요)
     - [5.2 MCP 설계 구성 요소 및 작동 방식](#52-MCP-설계-구성-요소-및-작동-방식)
 
 ---
@@ -158,9 +158,10 @@ NLP란 인간 언어(자연어)를 **컴퓨터가 이해하고 활용할 수 있
   - 세 개의 가중치 행렬($W_Q$, $W_K$, $W_V$)을 통해 다음 계산 수행:
 
     **Scaled Dot-Product Attention 연산**:
-    $$
+
+    ```math
     Attention(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-    $$
+    ```
 
     - Transformer에서 사용하는 Attention 메커니즘의 기본 형태로, Query, Key, Value 벡터 사이의 연산을 통해 중요도를 계산하고 가중합을 반환
     - **Q: Query 행렬(입력 단어의 질문 역할)**
