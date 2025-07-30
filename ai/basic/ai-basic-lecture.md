@@ -4,7 +4,7 @@
 
 - [RAG의 모든 것](#RAG의-모든-것)
   - [1. AI와 언어모델 기초 이해](#1-AI와-언어모델-기초-이해)
-    - [1.1 NLP, Natural Language Processing(자연어 처리)란 무엇인가?](#1.1-NLP-Natural-Language-Processing(자연어-처리)란-무엇인가?)
+    - [1.1 NLP, Natural Language Processing(자연어 처리)란 무엇인가?](#11-NLP-Natural-Language-Processing(자연어-처리)란-무엇인가?)
     - [1.2 NLP Preprocessing(전처리)](#1.2-NLP-Preprocessing(전처리))
     - [1.3 NLP 주요 Task](#1.3-NLP-주요-Task)
     - [1.4 NLP 모델링 및 구조](#1.4-NLP-모델링-및-구조)
