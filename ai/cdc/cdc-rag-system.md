@@ -114,9 +114,12 @@
 
 ## 7. 정리
 
-![아키텍처](https://github.com/parkseohuinim/tech-theory-archive/blob/main/ai/cdc/cdc-rag-system-1.png)
+![아키텍처](https://github.com/parkseohuinim/tech-theory-archive/blob/main/ai/cdc/assets/cdc-rag-system-1.png)
 
-![핵심](https://github.com/parkseohuinim/tech-theory-archive/blob/main/ai/cdc/cdc-rag-system-2.png)
+![핵심](https://github.com/parkseohuinim/tech-theory-archive/blob/main/ai/cdc/assets/cdc-rag-system-2.png)
+
+![cdc-rag-system-1](./assets/cdc-rag-system-1.png)
+![cdc-rag-system-2](./assets/cdc-rag-system-2.png)
 
 ---
 
