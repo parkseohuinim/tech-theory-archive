@@ -714,41 +714,41 @@
 #### UML 다이어그램 작성 및 활용 절차
 
 - **유스케이스 다이어그램**
-  ![usecase-diagram](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/usecase-diagram.webp)
+  ![usecase-diagram](./assets/usecase-diagram.webp)
   이미지 출처: [medium](https://medium.com/@manojsharmajtp2/what-is-a-uml-use-case-diagram-976ac1d69a9d)
   
   - 요구사항 분석의 출발점, 액터와 시스템 기능 정의
   - 이후 시퀀스·클래스 다이어그램 설계의 기반
 - **클래스 다이어그램**
   
-  ![class-diagram-1](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-1.webp)
+  ![class-diagram-1](./assets/class-diagram-1.webp)
   
-  ![class-diagram-2](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-2.webp)
+  ![class-diagram-2](./assets/class-diagram-2.webp)
   
-  ![class-diagram-3](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-3.webp)
+  ![class-diagram-3](./assets/class-diagram-3.webp)
   
-  ![class-diagram-4](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-4.webp)
+  ![class-diagram-4](./assets/class-diagram-4.webp)
   
-  ![class-diagram-5](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-5.webp)
+  ![class-diagram-5](./assets/class-diagram-5.webp)
   
-  ![class-diagram-6](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-6.webp)
+  ![class-diagram-6](./assets/class-diagram-6.webp)
   
-  ![class-diagram-7](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-7.webp)
+  ![class-diagram-7](./assets/class-diagram-7.webp)
   
-  ![class-diagram-8](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-8.webp)
+  ![class-diagram-8](./assets/class-diagram-8.webp)
   
   이미지 출처: [medium](https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b)
   
   - 정적 구조 모델링 (속성, 메서드, 관계)
 - **시퀀스 다이어그램**
   
-  ![sequence-diagram](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/sequence-diagram.webp)
+  ![sequence-diagram](./assets/sequence-diagram.webp)
   이미지 출처: [medium](https://medium.com/@nynptel/unlocking-the-power-of-sequence-diagrams-in-software-design-c8e3587fd8f4)
   
   - 객체 간 메시지 흐름(동적 행위) 표현
 - **액티비티 다이어그램**
   
-  ![activity-diagram](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/activity-diagram.webp)
+  ![activity-diagram](./assets/activity-diagram.webp)
   
   이미지 출처: [medium](https://medium.com/@joshuaudayagiri/uml-activity-diagram-36aea144793b)
   
