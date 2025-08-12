@@ -714,15 +714,46 @@
 #### UML 다이어그램 작성 및 활용 절차
 
 - **유스케이스 다이어그램**
+  ![usecase-diagram](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/usecase-diagram.webp)
+  이미지 출처: [medium](https://medium.com/@manojsharmajtp2/what-is-a-uml-use-case-diagram-976ac1d69a9d)
+  
   - 요구사항 분석의 출발점, 액터와 시스템 기능 정의
   - 이후 시퀀스·클래스 다이어그램 설계의 기반
 - **클래스 다이어그램**
+  
+  ![class-diagram-1](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-1.webp)
+  
+  ![class-diagram-2](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-2.webp)
+  
+  ![class-diagram-3](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-3.webp)
+  
+  ![class-diagram-4](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-4.webp)
+  
+  ![class-diagram-5](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-5.webp)
+  
+  ![class-diagram-6](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-6.webp)
+  
+  ![class-diagram-7](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-7.webp)
+  
+  ![class-diagram-8](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/class-diagram-8.webp)
+  
+  이미지 출처: [medium](https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b)
+  
   - 정적 구조 모델링 (속성, 메서드, 관계)
 - **시퀀스 다이어그램**
+  
+  ![sequence-diagram](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/sequence-diagram.webp)
+  이미지 출처: [medium](https://medium.com/@nynptel/unlocking-the-power-of-sequence-diagrams-in-software-design-c8e3587fd8f4)
+  
   - 객체 간 메시지 흐름(동적 행위) 표현
 - **액티비티 다이어그램**
+  
+  ![activity-diagram](/Users/seohuipark/Desktop/Document/tech-theory-archive/computer-science/software-engineering/activity-diagram.webp)
+  
+  이미지 출처: [medium](https://medium.com/@joshuaudayagiri/uml-activity-diagram-36aea144793b)
+  
   - 업무 절차, 조건, 병렬, 반복 흐름 표현
-- **추천 순서**: **유즈케이스 → 클래스 → 시퀀스 → 액티비티**
+- **추천 순서**: **유스케이스 → 클래스 → 시퀀스 → 액티비티**
 - **대응 개념**: Top-down 분석 vs Bottom-up 설계
 
 ------
@@ -758,7 +789,7 @@
 
 ------
 
-#### 유즈케이스 다이어그램 액터 일반화
+#### 유스케이스 다이어그램 액터 일반화
 
 - **일반화(Generalization)**: 상위 액터 기능 상속
   - 일부 액터에만 추가 기능이 있을 때 사용
@@ -833,7 +864,7 @@
 
 ------
 
-#### 유즈케이스 다이어그램
+#### 유스케이스 다이어그램
 
 - **목적**: 기능 정의, 범위 설정, 액터-기능 관계
 - **활용**: 다른 다이어그램 시나리오 도출 기반
