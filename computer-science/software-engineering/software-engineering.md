@@ -1144,3 +1144,100 @@
 | 도구      | SW·HW 지원체계     | 기법            |
 
 ---
+
+### 18. BPMN(Business Process Model and Notation)
+
+![bpmn-flow-chart](./assets/bpmn-flow-chart.png)
+
+#### 태스크(Task)
+
+![bpmn-activity](./assets/bpmn-activity.png)
+
+- 업무 단위 (자동화 태스크, 사용자 태스크 등)
+- 사람 / 시스템 역할 구분 필요 → **Lane(수영로) / Pool(풀)** 사용
+
+**유사/대조 개념**
+
+- **사용자 태스크(User Task)**: 사람이 처리
+- **서비스 태스크(Service Task)**: 시스템 자동 실행
+- **스크립트 태스크(Script Task)**: 코드로 실행
+
+------
+
+#### 게이트웨이(Gateway)
+
+![bpmn-gateway](./assets/bpmn-gateway.png)
+
+- **조건 분기 / 병렬 처리 / 흐름 제어**를 담당
+- BPMN 도형: 마름모
+
+**종류**
+
+- **Exclusive Gateway (XOR)**: 조건에 따라 1개의 경로 선택
+- **Parallel Gateway (AND)**: 여러 경로 병렬 실행
+- **Inclusive Gateway (OR)**: 조건 충족하는 모든 경로 실행
+- **Event-based Gateway**: 이벤트 발생 여부에 따라 분기
+
+**반대 개념**
+
+
+
+- **시퀀스 플로우(Sequence Flow)**: 순차적 흐름 (단순 직선)
+  ![bpmn-sequence-flow](./assets/bpmn-sequence-flow.png)
+- **메시지 플로우(Message Flow)**: 조직 내 다양한 부분에 거쳐 전달되는 메시지를 표시
+  ![bpmn-message-flow](./assets/bpmn-message-flow.png)
+- **연계**: 아티팩트를 이벤트, 활동, 게이트웨이에 연계
+  ![bpmn-flow](./assets/bpmn-flow.png)
+- 게이트웨이는 "제어 흐름", 시퀀스는 "흐름 연결"
+
+------
+
+#### Sub-Process
+
+- 복잡한 흐름을 묶어 별도 프로세스로 관리
+- 예: **데이터 익명화/가명화 과정**을 하나의 Sub-Process로 정의
+
+**비교**
+
+- **Task**: 단일 활동
+- **Sub-Process**: 여러 활동 묶음
+
+------
+
+#### 풀(Pool) / 레인(Lane)
+
+![bpmn-pool-lane](./assets/bpmn-pool-lane.png)
+
+- **Pool**: 참여자(조직, 시스템)
+- **Lane**: Pool 내 역할 구분 (사람 vs 시스템)
+
+**실무 포인트**
+
+- 역할 혼동 방지 → 책임 명확화
+- 시험 문제에서 자주 "역할 구분을 위해 Lane 사용"이 정답
+
+------
+
+#### 이벤트(Event)
+
+![bpmn-event](./assets/bpmn-event.png)
+
+- **Start Event**: 프로세스 시작
+- **Intermediate Event**: 중간 이벤트 (메시지, 타이머, 오류 등)
+- **End Event**: 종료
+
+**비교**
+
+- 이벤트는 "발생"을 의미, 태스크는 "행위"를 의미
+
+---
+
+#### 아티팩트
+
+![bpmn-artifact](./assets/bpmn-artifact.png)
+
+- **데이터** 오브젝트: 활동에 필요한 데이터를 표시
+- **그룹**: 논리적으로 그룹화된 활동을 표시
+- **주석**: 다이어그램 부분에 대한 추가 설명 제공
+
+---
