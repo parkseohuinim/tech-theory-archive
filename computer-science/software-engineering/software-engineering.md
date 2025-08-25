@@ -517,7 +517,7 @@
 
 ---
 
-### 마이크로서비스 아키텍처(Microservice Architecutre)
+### 마이크로서비스 아키텍처(MSA, Microservice Architecutre)
 
 #### 아키텍처 스타일로서의 마이크로서비스
 
@@ -1775,13 +1775,66 @@
 
 ---
 
-### 16. UML 기반 프로그램 분석/설계
+### UML 기반 프로그램 분석/설계
+
+#### 정적 다이어그램(Structural Diagrams)
+
+- **목적:** 시스템의 구조(클래스, 객체, 컴포넌트, 배치 등)를 **고정된 관점**에서 표현
+- **특징:** 주로 시스템의 **정적인 관계**(클래스 간 관계, 객체 구성, 컴포넌트 의존성 등)를 보여줌
+
+| 다이어그램                                 | 설명                                                         | 그림                                                         |
+| ------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **클래스 다이어그램(Class Diagram)**       | 클래스, 속성, 메서드, 클래스 간 관계(상속, 연관, 집합, 의존 등)를 표현 | ![class-diagram-1](./assets/class-diagram-1.webp)이미지 출처: [사이트](https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b) |
+| **오브젝트 다이어그램(Object Diagram)**    | 특정 시점의 객체와 그 관계를 나타냄 (클래스 다이어그램의 인스턴스화된 모습) | ![object-diagram-1](./assets/object-diagram-1.webp)이미지 출처: [사이트](https://medium.com/@anishacse2018/uml-object-diagrams-74ccb5239bae) |
+| **컴포넌트 다이어그램(Component Diagram)** | 시스템을 구성하는 모듈(컴포넌트)과 그들 간의 의존 관계를 표현 | ![component-diagram-1](./assets/component-diagram-1.webp)이미지 출처: [사이트](https://medium.com/@ramitha33/component-diagram-cd5864b3e1ac) |
+
+------
+
+#### 동적 다이어그램(Behavioral Diagrams)
+
+- **목적:** 시스템의 동작, 상태 변화, 활동 흐름을 표현
+- **특징:** 시간에 따라 **행동(Behavior)과 상태(State)**가 어떻게 변화하는지를 모델링
+
+| 다이어그램                                      | 설명                                                         | 그림                                                         |
+| ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **상태 다이어그램(State Diagram)**              | 객체의 상태와 상태 전이에 따른 동작을 표현                   | ![state-diagram-1](./assets/state-diagram-1.webp)이미지 출처: [사이트](https://medium.com/@data2nav/process-state-diagram-b80a5cca9b90) |
+| **상태 머신 다이어그램(State Machine Diagram)** | 상태 다이어그램의 확장, 이벤트와 조건에 따른 상세 상태 전이 표현 | ![state-machine-diagram-1](./assets/state-machine-diagram-1.webp)이미지 출처: [사이트](https://medium.com/@gmanzano.mx/state-machines-activity-diagrams-and-bpmn-strategic-decisions-and-modeling-perspective-ba2240aaa5ff) |
+| **활동 다이어그램(Activity Diagram)**           | 워크플로우나 비즈니스 프로세스를 표현 (순서도와 유사)        | ![activity-diagram](./assets/activity-diagram.webp)이미지 출처: [사이트](https://medium.com/@joshuaudayagiri/uml-activity-diagram-36aea144793b) |
+| **유스케이스 다이어그램(Use Case Diagram)**     | 사용자(액터)와 시스템 간의 기능적 요구사항(Use Case)을 표현  | ![usecase-diagram](./assets/usecase-diagram.webp)이미지 출처: [사이트](https://medium.com/@manojsharmajtp2/what-is-a-uml-use-case-diagram-976ac1d69a9d) |
+| **타이밍 다이어그램(Timing Diagram)**           | 시간에 따른 객체의 상태 변화와 메시지 교환을 상세히 표현     | ![timing-diagram-1](./assets/timing-diagram-1.png)이미지 출처: [사이트](https://www.researchgate.net/figure/Timing-diagram-of-CSMA-CA-protocol_fig2_286051657) |
+| **타임라인 다이어그램(Timeline Diagram)**       | 시간 축을 기준으로 객체나 프로세스의 이벤트 발생 순서를 표현 |                                                              |
+
+------
+
+#### 상호작용(인터랙션) 다이어그램(Interaction Diagrams)
+
+- **목적:** 객체 간 메시지 교환과 상호작용을 모델링
+- **특징:** 시스템의 **동적 행위**를 강조하지만, 특히 객체 간 **메시지 흐름**에 집중
+
+| 다이어그램                                         | 설명                                                         | 그림                                                         |
+| -------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **시퀀스 다이어그램(Sequence Diagram)**            | 객체 간 메시지 교환을 시간 순서에 따라 표현                  | ![sequence-diagram](./assets/sequence-diagram.webp)이미지 출처: [사이트](https://medium.com/@nynptel/unlocking-the-power-of-sequence-diagrams-in-software-design-c8e3587fd8f4) |
+| **커뮤니케이션 다이어그램(Communication Diagram)** | 객체 간 메시지 교환을 구조적으로 표현 (네트워크 형태, 시퀀스보다는 관계 중심) | ![communication-diagram-1](./assets/communication-diagram-1.png)이미지 출처: [사이트](https://sparxsystems.com/enterprise_architect_user_guide/17.1/modeling_languages/communicationdiagram.html) |
+
+
+
+---
+
+#### UML 다이어그램 분류 요약표
+
+| 구분                      | 주요 다이어그램                                     | 핵심 포인트               |
+| ------------------------- | --------------------------------------------------- | ------------------------- |
+| **정적(Structural)**      | 클래스, 오브젝트, 컴포넌트                          | 시스템의 고정된 구조      |
+| **동적(Behavioral)**      | 상태, 상태 머신, 활동, 유스케이스, 타이밍, 타임라인 | 시간·상태 변화, 동작 흐름 |
+| **상호작용(Interaction)** | 시퀀스, 커뮤니케이션                                | 객체 간 메시지 교환 방식  |
+
+---
 
 #### UML 다이어그램 작성 및 활용 절차
 
 - **유스케이스 다이어그램**
   ![usecase-diagram](./assets/usecase-diagram.webp)
-  이미지 출처: [medium](https://medium.com/@manojsharmajtp2/what-is-a-uml-use-case-diagram-976ac1d69a9d)
+  이미지 출처: [사이트](https://medium.com/@manojsharmajtp2/what-is-a-uml-use-case-diagram-976ac1d69a9d)
   
   - 요구사항 분석의 출발점, 액터와 시스템 기능 정의
   - 이후 시퀀스·클래스 다이어그램 설계의 기반
@@ -1803,20 +1856,20 @@
   
   ![class-diagram-8](./assets/class-diagram-8.webp)
   
-  이미지 출처: [medium](https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b)
+  이미지 출처: [사이트](https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b)
   
   - 정적 구조 모델링 (속성, 메서드, 관계)
 - **시퀀스 다이어그램**
   
   ![sequence-diagram](./assets/sequence-diagram.webp)
-  이미지 출처: [medium](https://medium.com/@nynptel/unlocking-the-power-of-sequence-diagrams-in-software-design-c8e3587fd8f4)
+  이미지 출처: [사이트](https://medium.com/@nynptel/unlocking-the-power-of-sequence-diagrams-in-software-design-c8e3587fd8f4)
   
   - 객체 간 메시지 흐름(동적 행위) 표현
 - **액티비티 다이어그램**
   
   ![activity-diagram](./assets/activity-diagram.webp)
   
-  이미지 출처: [medium](https://medium.com/@joshuaudayagiri/uml-activity-diagram-36aea144793b)
+  이미지 출처: [사이트](https://medium.com/@joshuaudayagiri/uml-activity-diagram-36aea144793b)
   
   - 업무 절차, 조건, 병렬, 반복 흐름 표현
 - **추천 순서**: **유스케이스 → 클래스 → 시퀀스 → 액티비티**
@@ -1959,6 +2012,537 @@
 - **조인**: 병렬 합류
 - **영문**: Fork Node / Join Node
 - **대응 개념**: Merge Node(조건 합류), Decision Node(분기)
+
+---
+
+### 디자인 패턴
+
+개발하면서 발생하는 반본적인 문제들을 어떻게 해결할 것인지에 대한 해결 방안으로 실제 현업에서 비즈니스 요구사항을 프로그래밍으로 처리하면 만들어진 다양한 해결책 중에서 많은 사람들이 인정한 모범 사례
+
+#### 객체지향 4대 원칙
+
+1. **캡슐화(Encapsulation)**
+   - 데이터와 메서드를 하나로 묶어 외부에서 직접 접근하지 못하게 함
+   - 정보 은닉, 유지보수 용이성, 변경에 따른 영향 최소화
+2. **상속성(Inheritance)**
+   - 기존 클래스를 확장해 새로운 클래스를 정의하는 것
+   - 코드 재사용, 계층적 관계 표현
+   - 하지만 과도한 상속은 결합도 증가 위험
+3. **추상화(Abstraction)**
+   - 불필요한 세부 구현은 감추고 핵심 개념만 표현
+   - 인터페이스/추상 클래스 활용
+   - 공통점 중심으로 모델링 가능
+4. **다형성(Polymorphism)**
+   - 동일한 인터페이스를 통해 다양한 구현체 사용 가능
+   - 코드 확장성과 유연성을 높임
+   - 런타임 다형성(오버라이딩), 컴파일 다형성(오버로딩)
+
+------
+
+#### SOLID 설계 원칙
+
+1. **SRP(Single Responsibility Principle, 단일 책임 원칙)**
+   - 클래스는 하나의 책임만 가져야 함
+2. **OCP(Open/Closed Principle, 개방-폐쇄 원칙)**
+   - 확장에는 열려 있고, 수정에는 닫혀 있어야 함
+   - 새로운 기능은 추가하되 기존 코드 수정은 최소화
+3. **LSP(Liskov Substitution Principle, 리스코프 치환 원칙)**
+   - 자식 클래스는 부모 클래스로 대체 가능해야 함
+   - 상속받은 클래스는 부모의 기능을 깨뜨리지 않아야 함
+4. **ISP(Interface Segregation Principle, 인터페이스 분리 원칙)**
+   - 클라이언트는 자신이 사용하지 않는 메서드에 의존하지 않아야 함
+   - 작은 단위의 인터페이스 분리
+5. **DIP(Dependency Inversion Principle, 의존 역전 원칙)**
+   - 구체 클래스가 아닌 추상에 의존해야 함
+   - 상위 모듈이 하위 모듈에 의존하지 않도록 의존성 역전
+
+------
+
+#### GoF의 디자인 패턴
+
+1994년 GoF(Gang of Four)가 정리한 23가지 패턴은 세 가지 범주로 나뉨
+
+##### 1. 생성(Creational) 패턴
+
+> 객체 생성 과정을 추상화하여 **유연하고 재사용성 높은 객체 생성 방식** 제공
+
+###### 1) 싱글톤(Singleton)
+
+- **정의**: 시스템 내에서 클래스 인스턴스를 하나만 유지하도록 보장
+- **의도**: 전역 상태 관리, 공유 리소스 제어
+- **특징**: private 생성자 + static 메서드 제공
+- **장점**: 메모리 절약, 일관된 접근점 제공
+- **단점**: 전역 상태 → 테스트 어려움, 결합도 증가
+- **예시**: 로그 관리 객체, DB 연결 풀, 캐시 매니저
+
+###### 2) 팩토리 메서드(Factory Method)
+
+- **정의**: 객체 생성 로직을 서브클래스로 위임
+- **의도**: 어떤 객체를 생성할지 하위 클래스에서 결정
+- **특징**: Creator 클래스가 추상 `factoryMethod()` 제공
+- **장점**: OCP 만족, 객체 생성 유연화
+- **단점**: 클래스 수 증가 가능
+- **예시**: 문서 편집기에서 `createDocument()`가 Word/PDF 문서를 생성
+
+###### 3) 추상 팩토리(Abstract Factory)
+
+- **정의**: 관련 객체 집합을 생성하는 인터페이스 제공
+- **의도**: 제품군 간의 호환성 유지
+- **특징**: Factory 객체가 제품(Product)군 생성 담당
+- **장점**: 제품군 일관성 보장
+- **단점**: 새로운 제품군 추가 어려움
+- **예시**: GUI 툴킷(윈도우 UI vs Mac UI), 데이터베이스 커넥션
+
+###### 4) 빌더(Builder)
+
+- **정의**: 복잡한 객체 생성 과정을 단계별로 분리
+- **의도**: 동일한 생성 과정으로 다양한 표현 생성
+- **특징**: Director가 Builder 인터페이스 호출
+- **장점**: 객체 생성 과정 캡슐화, 가독성 증가
+- **단점**: Director/Builder 구조 설계 필요
+- **예시**: JSON/SQL Query Builder, 게임 캐릭터 생성기
+
+###### 5) 프로토타입(Prototype)
+
+- **정의**: 기존 객체를 복제하여 새로운 객체 생성
+- **의도**: 생성 비용이 큰 객체를 효율적으로 생성
+- **특징**: `clone()` 메서드 활용
+- **장점**: 동적 객체 생성, 성능 향상
+- **단점**: 깊은 복사/얕은 복사 관리 필요
+- **예시**: 그래픽 편집기에서 도형 복사
+
+##### 2. 구조(Structural) 패턴
+
+> 클래스/객체를 조합해 **더 큰 구조**를 형성
+
+###### 6) 어댑터(Adapter)
+
+- **정의**: 호환되지 않는 인터페이스를 변환해 사용 가능하게 함
+- **의도**: 기존 코드 수정 없이 새 인터페이스 적용
+- **특징**: Wrapper 클래스 생성
+- **장점**: 레거시 코드 재사용
+- **단점**: 계층 깊어지면 복잡도 증가
+- **예시**: 전원 어댑터(220V → 110V), JDBC → 다양한 DB 드라이버
+
+######  7) 브리지(Bridge)
+
+- **정의**: 추상부와 구현부를 분리하여 독립적 확장 가능
+- **의도**: 다차원적 확장 문제 해결
+- **특징**: 추상화(Abstraction) + 구현자(Implementor) 분리
+- **장점**: 클래스 폭발 방지
+- **단점**: 설계 난이도 증가
+- **예시**: GUI (윈도우/맥) + 출력 장치(모니터/프린터)
+
+###### 8) 컴포지트(Composite)
+
+- **정의**: 객체들을 트리 구조로 구성해 부분-전체 계층 표현
+- **의도**: 개별 객체와 집합 객체를 동일하게 다룸
+- **특징**: Component 인터페이스 + Leaf + Composite
+- **장점**: 재귀적 구조 표현 용이
+- **단점**: 설계 복잡, 타입 구분 어려움
+- **예시**: 파일 시스템(폴더/파일), GUI 컨테이너
+
+###### 9) 데코레이터(Decorator)
+
+- **정의**: 객체에 동적으로 새로운 기능을 추가
+- **의도**: 상속 대신 합성을 통해 기능 확장
+- **특징**: Wrapper 객체가 원래 객체를 감쌈
+- **장점**: 유연한 확장
+- **단점**: 너무 많이 중첩 시 복잡
+- **예시**: 스트림 I/O (BufferedInputStream → FileInputStream)
+
+###### 10) 퍼사드(Facade)
+
+- **정의**: 복잡한 서브시스템을 단순 인터페이스로 감쌈
+- **의도**: 클라이언트가 간단한 API로 사용 가능
+- **특징**: 단일 진입점 제공
+- **장점**: 단순화, 결합도 낮춤
+- **단점**: 퍼사드 클래스가 너무 커질 수 있음
+- **예시**: Spring JDBC Template, Windows Control Panel
+
+###### 11) 플라이웨이트(Flyweight)
+
+- **정의**: 공유 가능한 객체를 캐싱하여 메모리 절약
+- **의도**: 다수의 동일/유사 객체 효율적 관리
+- **특징**: Intrinsic(공유) vs Extrinsic(외부 상태) 분리
+- **장점**: 메모리 최적화
+- **단점**: 상태 관리 복잡
+- **예시**: 텍스트 에디터 문자 객체, 게임 오브젝트 풀링
+
+###### 12) 프록시(Proxy)
+
+- **정의**: 실제 객체 대신 대리 객체 제공
+- **의도**: 접근 제어, 로깅, 지연 초기화
+- **특징**: Proxy가 RealSubject를 감쌈
+- **장점**: 보안/성능 관리 가능
+- **단점**: 추가 간접 계층으로 성능 저하 가능
+- **예시**: RMI, 가상 프록시(이미지 지연 로딩), 프록시 서버
+
+##### 3. 행위(Behavioral) 패턴
+
+> 객체 간의 **책임 분배와 상호작용** 정의
+
+###### 13) 책임 연쇄(Chain of Responsibility)
+
+- **정의**: 요청을 처리할 수 있는 여러 객체에게 순차적으로 전달
+- **의도**: 요청자와 처리자 간 결합 제거
+- **특징**: Handler 체인 구조
+- **장점**: 유연한 처리 흐름
+- **단점**: 요청이 끝까지 처리 안 될 수도 있음
+- **예시**: 예외 처리 체인, 고객센터 상담원 연결
+
+###### 14) 커맨드(Command)
+
+- **정의**: 요청을 캡슐화하여 실행, 취소, 재실행 지원
+- **의도**: 실행 요청을 객체로 분리
+- **특징**: Invoker, Command, Receiver 구조
+- **장점**: Undo/Redo 기능 용이
+- **단점**: 클래스 수 증가
+- **예시**: GUI 버튼 → 동작 캡슐화, 매크로 기능
+
+###### 15) 인터프리터(Interpreter)
+
+- **정의**: 언어 문법을 클래스로 표현하고 해석기 구현
+- **의도**: 간단한 언어 해석
+- **특징**: 문법 규칙을 클래스로 매핑
+- **장점**: 문법 확장 용이
+- **단점**: 복잡한 문법은 관리 어려움
+- **예시**: 정규표현식 해석기, SQL 파서
+
+###### 16) 이터레이터(Iterator)
+
+- **정의**: 집합 객체 내부 구조 노출 없이 순차적 접근
+- **의도**: 다양한 집합 순회 표준화
+- **특징**: `next()`, `hasNext()` 제공
+- **장점**: 컬렉션 캡슐화 유지
+- **예시**: Java Iterator, Python Generator
+
+###### 17) 중재자(Mediator)
+
+- **정의**: 객체 간 복잡한 상호작용을 중재자 객체에 위임
+- **의도**: 객체 간 결합도 감소
+- **특징**: Mediator가 모든 통신 관리
+- **장점**: 상호작용 단순화
+- **단점**: Mediator가 과부하될 수 있음
+- **예시**: 채팅 서버, 항공 관제 시스템
+
+###### 18) 메멘토(Memento)
+
+- **정의**: 객체의 상태를 캡슐화해 저장 및 복원
+- **의도**: 상태 스냅샷 제공
+- **특징**: Originator, Memento, Caretaker
+- **장점**: Undo/Redo 기능 구현 가능
+- **예시**: 문서 편집기 상태 저장
+
+###### 19) 옵서버(Observer)
+
+- **정의**: 한 객체의 상태 변화 → 관련 객체들에 자동 알림
+- **의도**: 1:N 관계 이벤트 구독
+- **특징**: Subject + Observer 인터페이스
+- **장점**: 느슨한 결합, 이벤트 기반 처리
+- **예시**: GUI 이벤트 리스너, Pub/Sub 시스템
+
+###### 20) 상태(State)
+
+- **정의**: 객체의 내부 상태에 따라 행위 변경
+- **의도**: 상태별 동작 캡슐화
+- **특징**: State 인터페이스 구현체 교체
+- **장점**: 조건문 제거, 코드 가독성 증가
+- **예시**: 문서 편집기 (Draft/Review/Published 상태)
+
+###### 21) 전략(Strategy)
+
+- **정의**: 알고리즘을 캡슐화하고 교체 가능하게 함
+- **의도**: 런타임 시 알고리즘 선택 가능
+- **특징**: Context + Strategy 인터페이스
+- **장점**: 코드 중복 제거, 확장 용이
+- **예시**: 정렬 알고리즘 선택, 암호화 방식 변경
+
+###### 22) 템플릿 메서드(Template Method)
+
+- **정의**: 알고리즘 뼈대를 정의하고 세부 구현은 서브클래스에 위임
+- **의도**: 코드 재사용 및 일관성 유지
+- **특징**: abstract 메서드 + 고정된 실행 순서
+- **장점**: 중복 제거, 공통 로직 재사용
+- **예시**: 데이터베이스 연결 흐름 (연결-쿼리-종료)
+
+###### 23) 방문자(Visitor)
+
+- **정의**: 구조는 고정, 연산만 분리하여 확장
+- **의도**: 객체 구조는 유지하면서 새로운 연산 추가
+- **특징**: Visitor 인터페이스 + accept() 메서드
+- **장점**: 연산 추가 용이
+- **단점**: 구조 변경 시 어려움
+- **예시**: 문서 구조(Paragraph, Table)에 새로운 렌더링 기능 추가
+
+---
+
+### MVC 패턴
+
+#### 개념과 목적
+
+**MVC(Model–View–Controller)**는 UI가 있는 애플리케이션에서 **관심사 분리(SoC)**를 통해 변경 용이성과 테스트 용이성을 높이려는 아키텍처 패턴
+
+- **Model**: 도메인 상태와 규칙(비즈니스 로직). 영속성(Repository/DAO)과 도메인 규칙(엔티티, 밸류, 서비스)을 포함
+- **View**: 표현/렌더링 계층. 모델(또는 ViewModel/DTO)을 읽어 화면을 그림(템플릿, UI 컴포넌트)
+- **Controller**: 유스케이스 진입점. 요청 해석, 입력 검증 위임, 애플리케이션 서비스 호출, View에 전달할 데이터 준비
+
+핵심 목적
+
+- **변경의 고립**: UI 변경이 로직을 흔들지 않게, 규칙 변경이 화면을 흔들지 않게
+- **재사용/테스트 용이성**: 로직을 UI와 분리해 단위 테스트 가능
+- **확장성**: 새로운 화면/엔드포인트를 추가해도 모델을 재사용
+
+------
+
+#### 전형적 요청–응답 흐름(서버 사이드 MVC: Spring MVC 예)
+
+1. **클라이언트 요청** → `Front Controller`(예: `DispatcherServlet`)가 URL을 **핸들러(Controller 메서드)**에 라우팅
+2. **Controller**
+   - 입력 바인딩/간단 검증(또는 Validator/Bean Validation으로 위임)
+   - **Application Service** 호출로 유스케이스 수행
+   - 결과를 **View Model/DTO**로 변환
+3. **View**
+   - 템플릿 엔진(Thymeleaf, JSP, Mustache 등)으로 DTO를 렌더링하여 HTML 응답(또는 JSON 직렬화)
+4. **클라이언트 응답 수신**
+
+> 프론트 컨트롤러(Front Controller) 패턴 + MVC가 함께 동작하는 게 일반적
+
+---
+
+#### 장점과 단점
+
+##### 장점
+
+- **관심사 분리**로 변경 용이: 화면/로직/데이터 독립 진화
+- **테스트 용이성**: 모델/서비스를 UI 없이 단위 테스트
+- **협업 효율**: 백엔드(모델/서비스)–프론트(뷰) 병렬 작업
+- **확장성/OCP**: 새 화면/엔드포인트 추가 시 기존 도메인 재사용
+
+##### 단점(주의점 포함)
+
+- **과설계 위험**: 작은 프로젝트에서 레이어가 과도해짐
+- **Fat Controller/Anemic Domain**:
+  - 컨트롤러에 로직이 몰리거나, 엔티티가 빈 껍데기가 되는 안티패턴
+- **양방향 의존**: View가 Model에 직접 의존하면 누수 위험 → DTO 사용
+- **클라이언트 복잡성 증가 시 부적합**: 풍부한 상호작용(SPA)에서는 MVVM/MVU가 더 적합
+- **템플릿 복잡도**: 대형 화면/재사용 컴포넌트가 많으면 템플릿 관리가 어려움
+
+---
+
+#### GoF/SOLID와의 연결 고리
+
+- **Front Controller**(패턴) + **Strategy/Command**(핸들러 매핑)
+- **Observer**: 모델 변화 → 뷰 갱신(클라이언트 MVC에서 자주 활용)
+- **Template Method**: 컨트롤러 공통 흐름(전/후처리)
+- **Factory/Builder**: DTO/응답 객체 조립
+- **SOLID**:
+  - SRP(각 레이어의 단일책임)
+  - DIP(컨트롤러→서비스→리포지토리 인터페이스 의존)
+  - OCP(핸들러/뷰 추가로 확장)
+
+------
+
+#### 컴포넌트 역할 상세
+
+##### Model
+
+- **도메인 엔티티/밸류**: 상태와 불변식, 행위 보유(도메인 주도 설계 권장)
+- **도메인 서비스**: 여러 엔티티/밸류에 걸친 규칙
+- **리포지토리**: 영속성 추상화(JPA Repository 등)
+- **이벤트/정책**: 도메인 이벤트 발행, 정책(Strategy) 교체 가능
+
+##### View
+
+- **표현 전용**: 계산/검증 최소화
+- **ViewModel/DTO** 입력만 사용 (엔티티 직접 노출 지양)
+- **템플릿/컴포넌트**: 반복/부분뷰(Partial), 레이아웃
+
+##### Controller
+
+- **얇게! (Thin Controller)**: 흐름 조정자. 비즈니스 규칙은 서비스/도메인에 위임
+- **입력 검증**: Bean Validation(`@Valid`) or 전용 Validator
+- **트랜잭션**: 보통 서비스 레이어에서 관리(`@Transactional`)
+
+---
+
+### 리팩토링
+
+#### 기본 원칙
+
+- **행동 보존(Behavior Preserving)**: 기능은 그대로, 구조만 개선
+- **작은 단계(Small Steps)**: 한 번에 하나의 안전한 변경 → 커밋 작게
+- **테스트 우선(Guardrail)**: 자동화 테스트(단위/통합/스냅샷)로 안전망 확보
+- **가시성/의도 강화**: 이름, 경계, 의존성 방향을 명확히
+
+------
+
+#### 추천 워크플로우(안전한 절차)
+
+1. **커버리지 확인**: 핵심 경로에 단위 테스트 추가(없다면 최소 스모크라도)
+2. **냄새 식별**: 중복/거대/긴 메서드/파라미터/변경 확산 등 체크
+3. **의존성 끊기**: 인터페이스 도입, 어댑터/포트로 외부 의존 분리
+4. **미세 리팩토링**:
+   - 이름 바꾸기 → 추출/이동 → 파라미터/데이터 구조 개선 → 클래스 분리
+5. **컴파일/테스트/커밋**(작게, 자주)
+6. **성능 회귀 확인**: 핫스팟(프로파일링) 주기적 체크
+7. **리뷰**: 규칙(PSR/Google/Effective Java 등) + 아키텍처 규칙 검사
+
+------
+
+#### Bad Smell ➜ 해결 리팩토링 매핑
+
+| Bad Smell                         | 증상                                            | 주된 위험                  | 핵심 리팩토링(우선순위)                                      |
+| --------------------------------- | ----------------------------------------------- | -------------------------- | ------------------------------------------------------------ |
+| **중복 코드**                     | 유사/동일 로직 반복                             | 버그 수정 누락/일관성 붕괴 | **Extract Method**, **Extract Class**, **Pull Up Method**(상위로), **Template Method**, 공통 유틸/도메인 서비스로 **Move Method** |
+| **긴 메서드**                     | 30~50줄↑, 조건/루프 중첩                        | 가독성 저하, 테스트 어려움 | **Extract Method**, **Introduce Explaining Variable**, **Decompose Conditional**, **Replace Temp with Query** |
+| **거대 클래스(God Class)**        | 책임 다수, 필드/메서드 과다                     | 결합/응집도 문제           | **Extract Class/Module**, **Extract Interface**, **Move Method/Field**, **Facade** 도입 |
+| **긴 파라미터 목록**              | 매개변수 4~5개↑, 불일치 잦음                    | 호출 실수, 결합 증가       | **Introduce Parameter Object**, **Preserve Whole Object**, **Replace Parameter with Query**, **Builder** |
+| **확산적 변경(Divergent Change)** | 한 요구사항 변경에 **한 클래스** 여러 부분 수정 | SRP 위반                   | **Extract Class/Module**, 책임 단위로 분리, **Layer/Port 분리** |
+| **산탄총 수술(Shotgun Surgery)**  | 작은 변경에 **여러 클래스**를 동시 수정         | 변경 비용↑, 리스크↑        | **Move Method/Field**로 응집, **Facade**, **Observer**로 알림 구조화 |
+| **게으른 클래스(Lazy Class)**     | 하는 일 거의 없음                               | 불필요 복잡도              | **Inline Class**, 인접 모듈로 흡수                           |
+| **미들 맨(Middle Man)**           | 대부분을 위임만                                 | 성능/명료성 저하           | **Remove Middle Man**, 필요한 로직만 남기기                  |
+| **Feature Envy**                  | 메서드가 다른 객체 데이터에 집착                | 응집도 저하                | **Move Method**(실제 데이터가 있는 클래스로)                 |
+| **Primitive Obsession**           | 원시타입 남용                                   | 불변식 누락                | **Introduce Value Object**, **Replace Magic Number with Symbolic Constant** |
+| **데이터 뭉치(Data Clumps)**      | 항상 함께 다니는 파라미터/필드                  | 중복 증가                  | **Introduce Parameter Object**, **Class Extraction**         |
+| **긴 조건분기**                   | if-else/switch 난무                             | 변경 취약                  | **Decompose Conditional**, **Replace Conditional with Polymorphism/Strategy**, **Guard Clause** |
+
+> ※ “확산적 변경”은 **한 클래스 안에서** 군데군데 고치게 되는 경우, “산탄총 수술”은 **여러 클래스**에 산재한 변경을 동시에 해야 하는 경우
+
+------
+
+#### 리팩토링 기법 모음
+
+- **Rename(Method/Class/Field/Variable)**: 의도를 드러내는 이름으로 변경
+- **Extract Method**: 일부 코드를 의도 단위 함수로 분리
+- **Inline Method/Class**: 불필요한 간접을 제거
+- **Move Method/Field**: 데이터가 있는 쪽으로 동작 이동
+- **Extract Class/Module/Interface**: 책임 단위로 분리/추상화
+- **Pull Up / Push Down**: 상속 트리에 공통 로직 상향/특화 로직 하향
+- **Introduce Parameter Object**: 관련 파라미터 묶어 타입화
+- **Preserve Whole Object**: 필요한 필드만 전달하지 말고 객체 자체 전달
+- **Replace Parameter with Query**: 파라미터 대신 조회 메서드 호출
+- **Decompose Conditional / Guard Clauses**: 분기 해체/빠른 반환
+- **Replace Conditional with Polymorphism/Strategy**: 분기를 다형성으로
+- **Introduce Assertion**: 불변식/전제 조건을 코드로 명시
+- **Encapsulate Field/Collection**: 세터/추가·삭제 메서드로 캡슐화
+- **Introduce Value Object**: 원시타입 묶어 도메인 의미/불변성 부여
+- **Replace Inheritance with Delegation**: 잘못된 상속을 조합으로
+- **Extract/Introduce Facade**: 외부 호출 관문 단순화
+
+---
+
+### API
+
+| 구분                 | **SOAP(Simple Object Access Protocol)**                      | **REST(Representational State Transfer)**                    |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **정의**             | XML 기반의 메시징 프로토콜. 엄격한 표준과 규격을 따름        | 아키텍처 스타일. 자원을 URI로 표현하고 HTTP 표준 메서드 활용 |
+| **데이터 포맷**      | XML 고정                                                     | 주로 JSON, XML, YAML 등 다양 (JSON이 사실상 표준처럼 쓰임)   |
+| **프로토콜 의존성**  | 다양한 프로토콜 지원 (HTTP, SMTP, TCP 등)                    | 주로 HTTP 사용                                               |
+| **표준화/스펙**      | WSDL(Web Services Description Language), WS-Security, WS-ReliableMessaging 등 풍부한 표준 제공 | 별도의 표준 없음. 설계 원칙에 따라 자유롭게 구현 (RFC 7231 기반) |
+| **보안**             | WS-Security 표준 지원 (메시지 암호화, 서명 등)               | HTTPS 기반 보안(TLS/SSL) 권장. 별도 표준은 없음              |
+| **트랜잭션**         | ACID 트랜잭션 지원 가능                                      | 직접적인 지원 없음. 구현에 따라 분산 트랜잭션 처리 필요      |
+| **상태 관리**        | 기본적으로 Stateful (상태를 유지하는 서비스 설계 가능)       | Stateless (요청마다 독립적) 권장                             |
+| **성능/속도**        | XML 파싱 필요 → 무겁고 느림                                  | 경량(JSON/HTTP) → 빠르고 효율적                              |
+| **사용 편의성**      | 복잡. 엄격한 XML 규격, 도구 필요                             | 단순. 브라우저에서도 테스트 가능 (GET/POST 요청)             |
+| **적합한 사용 사례** | - 금융/결제 시스템 (보안·트랜잭션 중요)   - 엔터프라이즈 환경, 정형화된 계약 기반 통신 | - 웹/모바일 애플리케이션 API   - 공공 Open API, 소셜미디어, IoT |
+| **장점**             | - 강력한 보안/트랜잭션   - 엄격한 스키마 기반 신뢰성         | - 단순, 가볍고 빠름   - 유연한 데이터 형식   - 학습 곡선 완만 |
+| **단점**             | - 무겁고 복잡함   - 개발 난이도 높음                         | - 표준 부재 → 구현 편차   - 보안/트랜잭션 표준 부족          |
+
+---
+
+### 인증 및 권한
+
+#### 개념 비교
+
+| 구분              | **SSO**                                                      | **SAML 2.0**                                                 | **OAuth 2.x / 2.1(+ OIDC)**                                  | **RBAC**                                               |
+| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------ |
+| **역할**          | “한 번 로그인으로 여러 서비스 접근”을 가능하게 하는 **통합 로그인 패턴** | **IdP↔SP** 간 인증/속성(권한) 교환을 위한 **XML 표준 프로토콜** | **권한 위임(Authorization)** 표준. OIDC 추가 시 **인증(AuthN)**까지 | **권한(Authorization) 모델**: 역할(Role) 기반 접근제어 |
+| **AuthN / AuthZ** | 주로 **인증(AuthN)** 경험 통합                               | **주로 인증(AuthN)** + 속성 전달                             | **권한 위임(AuthZ)** 중심 (OIDC로 AuthN 보완)                | **권한(AuthZ)** 정책 자체                              |
+| **주요 주체**     | 사용자, **IdP**, 여러 **SP/앱**                              | 사용자, **IdP**, **SP(Service Provider)**                    | **Resource Owner**, **Client**, **Authorization Server**, **Resource Server** | 사용자, 역할(Role), 권한(Permission), 리소스(Resource) |
+| **데이터 형식**   | 구현에 따라 다양(쿠키/토큰)                                  | **XML Assertion** (서명/암호화 가능)                         | **JWT/opaque 토큰**, JSON, (OIDC: ID Token=JWT)              | DB/정책엔진(권한 테이블, 정책 규칙)                    |
+| **전송/연동**     | 리다이렉트/쿠키/토큰 공유 등                                 | 브라우저 **Redirect/POST**로 **Signed Assertion** 전달       | **Authorization Code + PKCE**(권장), Client Credentials, Device Code 등 | 앱 내부의 **인증 후 권한 판단** 단계에서 사용          |
+| **상태성**        | 보통 **세션 기반**(IdP 세션)                                 | SP/IdP 세션 활용                                             | **Stateless** 토큰(액세스/리프레시), 백채널 검증도 가능      | 상태와 무관(정책/역할 평가)                            |
+| **강점**          | UX/운영 효율(로그인 1회), 중앙화                             | 엔터프라이즈 상호운용성, 강한 보안 표준(서명, 암호화, SLO)   | 웹·모바일·API 친화, 미세한 **스코프**로 권한 위임, 광범위한 생태계 | 단순/일관된 권한 관리, 감사 용이, 최소권한 구현 쉬움   |
+| **약점/주의**     | SSO 세션 탈취 시 영향 범위 큼, SLO 복잡                      | XML/서명 처리 복잡, 모바일 네이티브 적합성 낮음              | “인증”은 표준 외(OIDC 필요), 리다이렉트/토큰 유출, 구현 편차 | **역할 폭발**(Role Explosion), 동적 컨텍스트 표현 한계 |
+| **주요 사용처**   | 사내 포털↔여러 업무시스템                                    | 기업 SSO, SaaS 연동(Entra ID/Okta↔SP)                        | 소셜 로그인, B2C/B2B API, 마이크로서비스                     | ERP/백오피스, API 권한 테이블, 미들오피스              |
+| **표준/확장**     | (개념) SAML/OIDC 등으로 구현                                 | SAML 2.0, WS-*                                               | OAuth 2.1 권고, OIDC, JWT/JWKS, Introspection/Revocation     | NIST RBAC, **ABAC/ReBAC**로 확장 가능                  |
+| **대표 시나리오** | 한 번 로그인 → 여러 시스템 자동 로그인                       | 사내 포털에서 Salesforce 접속 시 SAML Assertion 전달         | 모바일 앱이 서버 API 접근권한을 토큰으로 위임                | “매니저=쓰기, 인턴=읽기” 같은 역할 단위 통제           |
+
+> 한 줄 요약: **SSO**는 경험 패턴, **SAML/OIDC**는 SSO를 구현하는 **프로토콜**, **OAuth**는 권한 위임(인증은 OIDC로), **RBAC**은 애플리케이션 내부 **권한 모델**
+
+------
+
+#### 동작 흐름
+
+##### SSO
+
+- (1) 사용자 서비스 A 로그인 → **IdP에서 인증**(MFA 포함 가능)
+- (2) **IdP 세션 생성**
+- (3) 사용자 서비스 B 접근 → IdP로 리다이렉트 → 기존 세션 확인 → **재인증 없이 Assertion/ID Token 발급** → B 로그인 완료
+- (옵션) **Single Logout(SLO)**: 한 곳에서 로그아웃 시 모든 SP 세션 종료
+
+##### SAML 2.0 (SP-Initiated 기준)
+
+1. 사용자가 **SP** 접근 → 로그인 필요
+2. SP가 **AuthnRequest**를 **IdP**로 리다이렉트
+3. IdP가 사용자 인증(비밀번호/MFA)
+4. IdP가 **서명된 SAML Assertion(XML)** 을 **브라우저 POST**로 **SP의 ACS(Assertion Consumer Service)** 엔드포인트에 전달
+5. SP가 서명/기한/대상자(Audience) 검증 → 세션 발급 → 접속 허가
+
+> 주요 요소: **NameID**, **Attributes**, **Conditions(NotBefore/NotOnOrAfter)**, **AudienceRestriction**, **InResponseTo**
+
+##### OAuth 2.x / 2.1 (+ OIDC)
+
+##### **Authorization Code + PKCE**
+
+1. 클라이언트가 사용자를 **Authorization Server(AS)** 로 리다이렉트(코드+PKCE)
+2. 사용자 인증(로그인) 및 동의(스코프)
+3. AS가 **Authorization Code** 반환
+4. 클라이언트가 코드+**code_verifier** 로 토큰 엔드포인트 호출 → **Access Token(+Refresh, OIDC면 ID Token)** 발급
+5. 클라이언트는 **Resource Server(API)** 호출 시 Access Token 전송(Bearer)
+
+다른 그랜트: **Client Credentials**(머신-투-머신), **Device Code**(TV/IoT), (ROPC는 지양)
+
+##### RBAC
+
+- (1) **역할 설계**(Role → Permission 목록)
+- (2) 사용자 ↔ 역할 매핑(조직/직무/소속 기반)
+- (3) 요청 시 **토큰의 roles/permissions** 또는 DB 정책 조회로 **허가 판단**
+- (4) 감사 로그: 누가 어떤 역할로 어떤 리소스에 접근했는지 기록
+
+------
+
+#### 필수 보안 체크리스트
+
+##### SSO
+
+- **IdP 세션 보호**: Secure/HttpOnly/SameSite 쿠키, 짧은 수명 + 활동기반 연장
+- **SLO 설계**: 백채널/프런트채널 조합, 실패 시 복구 전략
+- **MFA/리스크 기반 인증** 도입(기기지문/위치/평판)
+
+##### SAML
+
+- **서명/검증 필수**: Assertion/Response에 **XML Signature**. 알고리즘 다운그레이드 차단
+- **XML Wrapping 방지**: 표준 라이브러리 사용, **Audience/기한** 엄격 검증
+- **클럭 스큐** 허용 범위 최소화, **InResponseTo** 매칭으로 재사용 방지
+- **전송 보안**: **TLS** 강제, 필요 시 Assertion **암호화**
+
+##### OAuth(+OIDC)
+
+- **PKCE 필수**(모든 공개 클라이언트), **Implicit/Hybrid** 회피
+- **Redirect URI** 정확 매칭(와일드카드 금지), **state/nonce** 활용
+- **스코프 최소화**, **Refresh Token Rotation** + 1회용화(재사용 탐지)
+- **토큰 저장**: SPA는 **메모리 보관**(XSS 취약 최소화), 서버는 **서버 세션** or 안전 저장
+- **Introspection/Revocation** 지원, **JWKS** 캐시/키 롤오버
+- **CORS/CSRF** 분리 대응: 쿠키 기반이면 **SameSite/CSRF 토큰** 병행
+
+##### RBAC
+
+- **최소 권한 원칙**, **SoD(업무분리) 제약**(예: 생성자=승인자 불가)
+- **역할 폭발 관리**: **역할 계층/권한 템플릿** 도입, **정기 재인증(Access Review)**
+- **감사**: 권한 변경 이력, 접근 로그(누가/언제/어디에)
+- 동적 정책 필요 시 **ABAC(속성 기반)** 또는 **ReBAC(관계 기반)** 병행
 
 ---
 
